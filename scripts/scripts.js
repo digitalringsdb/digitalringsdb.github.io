@@ -73,7 +73,7 @@ angular.module("yapp", ["ui.router", "ngAnimate",'ngStorage','firebase'])
 }])
 
 .controller("LoginCtrl", ["$scope", "$location",'$rootScope', '$firebaseAuth', '$firebaseArray',  function($scope, $location, $rootScope, $firebaseAuth, $firebaseArray) {
-    // var ref = new Firebase('https://seastan-lotrdb.firebaseio.com/');
+    // var ref = new Firebase('https://seastan-dlotrdb.firebaseio.com/');
     // $rootScope.auth = $firebaseAuth(ref);
     $scope.message='';
 
@@ -225,7 +225,7 @@ angular.module("yapp", ["ui.router", "ngAnimate",'ngStorage','firebase'])
 
 .controller("authCtrl", ["$scope","$rootScope","$state","$location","$firebase","$firebaseArray","$firebaseObject","$firebaseAuth",function($scope,$rootScope,$state,$location,$firebase,$firebaseArray,$firebaseObject,$firebaseAuth) {
     $rootScope.displayName = 'Guest';
-    $rootScope.ref = new Firebase('https://seastan-lotrdb.firebaseio.com/');
+    $rootScope.ref = new Firebase('https://seastan-dlotrdb.firebaseio.com/');
     //$rootScope.users = $firebaseObject($rootScope.ref.child('users'));
     //$rootScope.userdecks = $firebaseObject($rootScope.ref.child('decks'));
     //$rootScope.userlogs  = $firebaseObject($rootScope.ref.child('logs'));
